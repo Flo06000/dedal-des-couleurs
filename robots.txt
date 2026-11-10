@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://flo06000.github.io/dedal-des-couleurs/sitemap.xml
