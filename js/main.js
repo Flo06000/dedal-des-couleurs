@@ -1,4 +1,4 @@
-/* effets au défilement : apparition des blocs et barre de progression */
+/* effet au défilement : apparition des blocs */
 (function () {
   var root = document.documentElement;
   if (!('IntersectionObserver' in window) ||
@@ -18,20 +18,5 @@
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
     Array.prototype.forEach.call(document.querySelectorAll('.reveal'), function (el) { io.observe(el); });
-
-    /* barre de progression en haut de la page */
-    var bar = document.querySelector('.progress');
-    if (bar) {
-      var ticking = false;
-      var update = function () {
-        var max = root.scrollHeight - window.innerHeight;
-        bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(window.scrollY / max, 1) : 0) + ')';
-        ticking = false;
-      };
-      window.addEventListener('scroll', function () {
-        if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
-      }, { passive: true });
-      update();
-    }
   });
 })();

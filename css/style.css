@@ -41,6 +41,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: clip;
   background: var(--white);
   color: var(--nuit);
   font-family: var(--font-text);
@@ -396,7 +397,7 @@ section[id] { scroll-margin-top: 64px; }
   background: var(--white); color: var(--nuit); transition: background-color .3s, color .3s, transform .4s var(--ease);
 }
 
-/* pied de page, bouton retour en haut, barre de progression */
+/* pied de page */
 .site-footer { padding-block: clamp(48px, 7vw, 72px); text-align: center; }
 .site-footer h3 { margin-bottom: 20px; }
 .social { display: flex; justify-content: center; gap: 24px; }
@@ -407,18 +408,6 @@ section[id] { scroll-margin-top: 64px; }
 }
 .legal { margin-top: 28px; font-size: .875rem; color: var(--grey); }
 .legal a { text-decoration: none; }
-
-.to-top {
-  position: fixed; right: 16px; bottom: 16px; z-index: 90;
-  display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%;
-  background: var(--blue); color: var(--white);
-  transition: background-color .3s;
-}
-
-.progress {
-  position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 200;
-  background: var(--blue); transform: scaleX(0); transform-origin: left;
-}
 
 /* animations */
 @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.08); } }
@@ -471,7 +460,6 @@ h1, h2, h3, p, dt, dd, li, .label, mark, .logo, .field label, .legal, .lead { tr
   .breadcrumb a:hover { color: var(--blue); }
   .social a:hover { color: var(--nuit); transform: translateY(-4px); }
   .legal a:hover { color: var(--blue); }
-  .to-top:hover { background: var(--nuit); }
   .lightbox__close:hover { background: var(--blue); color: var(--white); transform: rotate(90deg); }
 }
 
@@ -501,7 +489,6 @@ h1, h2, h3, p, dt, dd, li, .label, mark, .logo, .field label, .legal, .lead { tr
   .similar { gap: 24px; }
   .similar .card__title { font-size: var(--fs-h3); }
   .similar .card__meta { font-size: .8125rem; }
-  .to-top { right: 20px; bottom: 20px; }
   .lightbox img { max-width: 94vw; max-height: 88vh; }
 }
 
@@ -564,7 +551,7 @@ h1, h2, h3, p, dt, dd, li, .label, mark, .logo, .field label, .legal, .lead { tr
 
 /* impression */
 @media print {
-  .site-header, .to-top, .progress, .filters, .menu-toggle { display: none !important; }
+  .site-header, .filters, .menu-toggle { display: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
   .lightbox { display: none !important; }
   body { color: #000; }
