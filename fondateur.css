@@ -1,5 +1,5 @@
 /* page Le fondateur */
-.founder { display: grid; grid-template-columns: 1fr; gap: clamp(32px, 6vw, 88px); align-items: center; }
+.founder { display: grid; grid-template-columns: 1fr; gap: clamp(32px, 4.3vw, 62px); align-items: center; }
 .founder__media { max-width: 360px; margin: 0; padding: 12px; border: 1px solid var(--line); background: var(--white); }
 .founder__media img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
 .founder__text { display: grid; gap: 18px; max-width: 58ch; }
@@ -8,12 +8,12 @@
 .founder__text .label { color: var(--blue); }
 .mark { background: var(--pale); color: var(--blue); padding: 0 .25em; }
 .facts { list-style: none; margin: 8px 0 0; padding: 20px 0 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr; gap: 16px; }
-.facts strong { display: block; font-family: var(--font-title); font-size: 1.5rem; font-weight: 600; color: var(--nuit); }
+.facts strong { display: block; font-family: var(--font-title); font-size: 1.375rem; font-weight: 500; color: var(--nuit); }
 .facts span { font-size: .875rem; color: var(--grey); }
 .founder__cta { display: flex; flex-wrap: wrap; gap: 12px; }
 .founder__cta .btn { width: 100%; }
 @media (min-width: 521px) { .facts { grid-template-columns: repeat(3, 1fr); } .founder__cta .btn { width: auto; } }
-@media (min-width: 901px) { .founder { grid-template-columns: minmax(260px, 420px) 1fr; } .founder__media { max-width: none; } }
+@media (min-width: 901px) { .founder { grid-template-columns: minmax(260px, 444px) 1fr; } .founder__media { max-width: none; } }
 
 /* titre du pied de page */
 .site-footer h2 { font-size: var(--fs-h3); line-height: 1.2; margin-bottom: 20px; }
