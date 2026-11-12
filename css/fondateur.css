@@ -7,9 +7,9 @@
 .founder__text .lead { color: var(--nuit); }
 .founder__text .label { color: var(--blue); }
 .mark { background: var(--pale); color: var(--blue); padding: 0 .25em; }
-.facts { list-style: none; margin: 8px 0 0; padding: 20px 0 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr; gap: 16px; }
-.facts strong { display: block; font-family: var(--font-title); font-size: 1.375rem; font-weight: 500; color: var(--nuit); }
-.facts span { font-size: .875rem; color: var(--grey); }
+.facts { list-style: none; margin: 8px 0 0; padding: 20px 0 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr; gap: 20px; }
+.facts strong { display: block; line-height: 1.2; font-family: var(--font-title); font-size: 1.375rem; font-weight: 500; color: var(--nuit); }
+.facts span { display: block; margin-top: 2px; font-size: .875rem; line-height: 1.4; color: var(--grey); }
 .founder__cta { display: flex; flex-wrap: wrap; gap: 12px; }
 .founder__cta .btn { width: 100%; }
 @media (min-width: 521px) { .facts { grid-template-columns: repeat(3, 1fr); } .founder__cta .btn { width: auto; } }
