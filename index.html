@@ -7,7 +7,6 @@
   <link rel="canonical" href="https://flo06000.github.io/dedal-des-couleurs/">
   <meta name="description" content="Dedal des Couleurs, galerie d'art dédiée à la photographie animalière : tirages d'art en édition limitée, expositions et événements.">
   <meta name="theme-color" content="#FFFFFF">
-  <!-- Aperçu quand le lien est partagé : remplace par une de tes photos si tu veux -->
   <meta property="og:title" content="Dedal des Couleurs · Photographie animalière">
   <meta property="og:description" content="Tirages d'art en édition limitée, expositions et événements.">
   <meta property="og:image" content="images/hero.jpg">
@@ -15,7 +14,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <!-- 🎨 Le style (couleurs, polices, responsive, effets) est ici, dans cette page -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js"></script>
 </head>
@@ -23,6 +21,7 @@
   <a class="skip-link" href="#contenu">Aller au contenu</a>
   <div class="progress" aria-hidden="true"></div>
 
+  <!-- en-tête et menu -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#accueil">Dedal des Couleurs</a>
@@ -41,6 +40,7 @@
 
   <main id="contenu">
 
+    <!-- accueil -->
     <section class="hero" id="accueil">
       <img class="hero__img" src="images/hero.jpg" width="2576" height="2035" fetchpriority="high"
            alt="Groupe de flamants roses marchant dans l’eau peu profonde devant des roseaux, à contre-jour">
@@ -55,6 +55,7 @@
       <a class="hero__scroll" href="#a-propos" aria-label="Descendre vers la suite"><span></span></a>
     </section>
 
+    <!-- à propos -->
     <section class="section" id="a-propos">
       <div class="container">
         <header class="section-head reveal">
@@ -84,6 +85,7 @@
       </div>
     </section>
 
+    <!-- le fondateur -->
     <section class="section section--pale" id="fondateur">
       <div class="container teaser">
         <img class="teaser__img" src="images/paul-dechewsky.jpg" width="928" height="1152" alt="Portrait de Paul Dechewsky dans la galerie" loading="lazy">
@@ -96,6 +98,7 @@
       </div>
     </section>
 
+    <!-- galerie -->
     <section class="section section--tint" id="galerie">
       <div class="container">
         <header class="section-head reveal">
@@ -104,6 +107,7 @@
         </header>
         <p class="lead reveal">Dedal des Couleurs présente 45 photographies en édition limitée, en voici un échantillon :</p>
 
+        <!-- filtres de la galerie (boutons radio + label) -->
         <div class="gallery">
           <input class="sr-only" type="radio" name="filtre" id="f-all" checked>
           <input class="sr-only" type="radio" name="filtre" id="f-oiseaux">
@@ -262,6 +266,7 @@
       </div>
     </section>
 
+    <!-- événements -->
     <section class="section" id="evenements">
       <div class="container">
         <header class="section-head section-head--inline reveal">
@@ -294,6 +299,7 @@
       </div>
     </section>
 
+    <!-- contact -->
     <section class="section section--tint" id="contact">
       <div class="container">
         <header class="section-head reveal">
@@ -303,12 +309,12 @@
 
         <div class="contact">
           <ul class="contact__info reveal">
-            <!-- ✏️ REMPLACER les coordonnées par les vraies -->
             <li><span class="bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span><a href="tel:+33163458556">01 63 45 85 56</a></li>
             <li><span class="bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><a href="mailto:dedal@gmail.com">dedal@gmail.com</a></li>
             <li><span class="bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>10 rue de la République, 75000 Paris</span></li>
           </ul>
 
+          <!-- formulaire de contact -->
           <form class="form reveal" action="mailto:dedal@gmail.com" method="post" enctype="text/plain">
             <h3>Formulaire de contact</h3>
             <div class="field">
@@ -332,11 +338,11 @@
     </section>
   </main>
 
+  <!-- pied de page -->
   <footer class="site-footer">
     <div class="container">
       <h3>Rejoignez-nous !</h3>
       <ul class="social">
-        <!-- ✏️ REMPLACER les liens # par les vrais réseaux sociaux -->
         <li><a href="#" aria-label="Instagram"><svg class="icon icon--lg" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a></li>
         <li><a href="#" aria-label="YouTube"><svg class="icon icon--lg" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></a></li>
         <li><a href="#" aria-label="Facebook"><svg class="icon icon--lg" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a></li>
