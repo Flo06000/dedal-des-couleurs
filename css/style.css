@@ -245,9 +245,8 @@ section[id] { scroll-margin-top: 64px; }
   overflow: hidden; background: var(--pale);
 }
 .hero__img {
-  object-position: 4% 50%;
-  position: absolute; inset: auto 0 0 0; width: 100%; height: 92%; object-fit: cover;
-  mask-image: linear-gradient(to bottom, transparent 0%, #000 30%);
+  object-position: 98% 50%;
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
   animation: kenburns 22s ease-in-out infinite alternate;
   will-change: transform;
 }
@@ -474,7 +473,7 @@ h1, h2, h3, p, dt, dd, li, .label, mark, .logo, .field label, .legal, .lead { tr
 /* tablette */
 @media (min-width: 641px) {
   .hero { height: calc(100svh - var(--header-h)); min-height: 520px; }
-  .hero__img { inset: 0; height: 100%; mask-image: none; object-position: 50% 42%; }
+  .hero__img { object-position: 50% 42%; }
   .pillars { grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .grid { grid-template-columns: repeat(2, 1fr); }
   .card--landscape .card__media, .card--portrait .card__media { aspect-ratio: 411 / 320; }
