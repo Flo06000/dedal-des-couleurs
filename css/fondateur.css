@@ -1,4 +1,3 @@
-/* Page « Le fondateur » — présentation de Paul Dechewsky */
 .founder { display: grid; grid-template-columns: 1fr; gap: clamp(32px, 6vw, 88px); align-items: center; }
 .founder__media { max-width: 360px; margin: 0; padding: 12px; border: 1px solid var(--line); background: var(--white); }
 .founder__media img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
@@ -14,3 +13,4 @@
 .founder__cta .btn { width: 100%; }
 @media (min-width: 521px) { .facts { grid-template-columns: repeat(3, 1fr); } .founder__cta .btn { width: auto; } }
 @media (min-width: 901px) { .founder { grid-template-columns: minmax(260px, 420px) 1fr; } .founder__media { max-width: none; } }
+.site-footer h2 { font-size: var(--fs-h3); line-height: 1.2; margin-bottom: 20px; }
