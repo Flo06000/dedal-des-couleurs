@@ -1,3 +1,4 @@
+/* effets au défilement : apparition des blocs et barre de progression */
 (function () {
   var root = document.documentElement;
   if (!('IntersectionObserver' in window) ||
@@ -7,7 +8,7 @@
   root.classList.add('js');
 
   document.addEventListener('DOMContentLoaded', function () {
-    /* Apparition des blocs quand ils entrent à l'écran */
+    /* les blocs apparaissent quand on arrive dessus */
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (e.isIntersecting) {
@@ -18,6 +19,7 @@
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
     Array.prototype.forEach.call(document.querySelectorAll('.reveal'), function (el) { io.observe(el); });
 
+    /* barre de progression en haut de la page */
     var bar = document.querySelector('.progress');
     if (bar) {
       var ticking = false;
