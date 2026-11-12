@@ -44,15 +44,11 @@
     <section class="hero" id="accueil">
       <img class="hero__img" src="images/hero.jpg" width="2576" height="2035" fetchpriority="high"
            alt="Groupe de flamants roses marchant dans l’eau peu profonde devant des roseaux, à contre-jour">
-      <div class="hero__veil"></div>
       <div class="container hero__content">
         <p class="label">Photographie animalière</p>
         <h1>Le vivant,<br>dans sa lumière.</h1>
-        <a class="btn btn--primary" href="#galerie">Découvrir la galerie
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
+        <a class="btn btn--primary" href="#galerie">Découvrir la galerie</a>
       </div>
-      <a class="hero__scroll" href="#a-propos" aria-label="Descendre vers la suite"><span></span></a>
     </section>
 
     <!-- à propos -->
@@ -73,7 +69,7 @@
           <article class="pillar reveal">
             <svg class="icon icon--xl" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg>
             <h3>Notre photographe</h3>
-            <p>Un regard patient, des heures d’affût et le respect de l’animal.</p>
+            <p>Un regard patient, des heures d’affût et un profond respect de l’animal : chaque image est rapportée sans jamais le déranger.</p>
           </article>
           <article class="pillar reveal">
             <svg class="icon icon--xl" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
@@ -99,7 +95,7 @@
     </section>
 
     <!-- galerie -->
-    <section class="section section--tint" id="galerie">
+    <section class="section" id="galerie">
       <div class="container">
         <header class="section-head reveal">
           <h2>Galerie</h2>
@@ -159,7 +155,7 @@
             </a>
           </article>
 
-          <article class="card card--landscape c-oiseaux">
+          <article class="card card--landscape c-oiseaux is-extra">
             <a href="photo-4.html">
               <figure class="card__media">
                 <img src="images/photo-4.jpg" width="1600" height="1257" loading="lazy" alt="Deux jeunes chardonnerets élégants perchés sur une branche, becs ouverts l’un face à l’autre">
@@ -170,7 +166,7 @@
             </a>
           </article>
 
-          <article class="card card--landscape c-mammiferes c-savane">
+          <article class="card card--landscape c-mammiferes c-savane is-extra">
             <a href="photo-5.html">
               <figure class="card__media">
                 <img src="images/photo-5.jpg" width="1600" height="1273" loading="lazy" alt="Portrait de profil d’un lionceau aux grandes oreilles rondes, le regard tourné vers l’horizon">
@@ -181,7 +177,7 @@
             </a>
           </article>
 
-          <article class="card card--landscape c-montagne">
+          <article class="card card--landscape c-montagne is-extra">
             <a href="photo-6.html">
               <figure class="card__media">
                 <img src="images/photo-6.jpg" width="1600" height="1276" loading="lazy" alt="Papillon Apollon aux ocelles rouges posé sur une scabieuse mauve, au milieu des herbes">
@@ -300,7 +296,7 @@
     </section>
 
     <!-- contact -->
-    <section class="section section--tint" id="contact">
+    <section class="section" id="contact">
       <div class="container">
         <header class="section-head reveal">
           <h2>Contact</h2>
@@ -318,20 +314,18 @@
           <form class="form reveal" action="mailto:dedal@gmail.com" method="post" enctype="text/plain">
             <h3>Formulaire de contact</h3>
             <div class="field">
-              <label for="nom">Nom</label>
-              <input id="nom" name="nom" type="text" autocomplete="family-name" required minlength="2">
+              <label class="sr-only" for="nom">Nom</label>
+              <input id="nom" placeholder="Nom" name="nom" type="text" autocomplete="family-name" required minlength="2">
             </div>
             <div class="field">
-              <label for="prenom">Prénom</label>
-              <input id="prenom" name="prenom" type="text" autocomplete="given-name" required minlength="2">
+              <label class="sr-only" for="prenom">Prénom</label>
+              <input id="prenom" placeholder="Prénom" name="prenom" type="text" autocomplete="given-name" required minlength="2">
             </div>
             <div class="field">
-              <label for="email">E-mail</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
+              <label class="sr-only" for="email">E-mail</label>
+              <input id="email" placeholder="E-mail" name="email" type="email" autocomplete="email" required>
             </div>
-            <button class="btn btn--primary" type="submit">Envoyer
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
+            <button class="btn btn--primary" type="submit">Envoyer</button>
           </form>
         </div>
       </div>
